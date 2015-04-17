@@ -11,7 +11,10 @@
 |
 */
 
+Route::controller('couch', 'CouchController');
+Route::controller('doctrine', 'DoctrineController');
+
 Route::get('/', function()
 {
-	return View::make('hello');
+#	return View::make('hello');
 });
