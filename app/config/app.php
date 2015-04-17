@@ -121,6 +121,9 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
+        
+        'Nawiat\Core\ServiceProviders\RouteServiceProvider',
+        'Nawiat\Core\ServiceProviders\TemplateServiceProvider',
 
 	),
 
