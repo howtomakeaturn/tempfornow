@@ -2,6 +2,9 @@
 
 use \Controller as BaseController;
 use \View;
+use \File;
+use \Input;
+use \Redirect;
 
 class Controller extends BaseController
 {
@@ -24,7 +27,21 @@ class Controller extends BaseController
     
     public function getEdit($pageId)
     {
+        $page = File::get( base_path('Nawiat/Modules/Page/storage/' . $pageId . '/main.html') );
+        
+        return View::make('Admin/Page::edit', 
+            [
+                'page' => $page,
+                'pageId' => $pageId,                
+            ]
+        );
+    }
+    
+    public function postUpdate()
+    {
+        File::put( base_path('Nawiat/Modules/Page/storage/' . Input::get('pageId') . '/main.html'), Input::get('content') );
 
+        return Redirect::back();
     }
     
     public function getView()

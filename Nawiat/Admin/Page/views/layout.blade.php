@@ -6,8 +6,8 @@
     </head>
     <body>
         @section('sidebar')
-            This is the master sidebar.
-            <a href='/admin/blog/new'>New page</a>
+            <a href='/admin/page'>Pages</a>
+            <a href='/admin/page/new'>New page</a>
         @show
 
         <div class="container">
