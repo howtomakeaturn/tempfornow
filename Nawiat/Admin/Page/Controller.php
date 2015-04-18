@@ -7,13 +7,24 @@ class Controller extends BaseController
 {
     public function getIndex()
     {
-        return View::make('Admin/Page::index')->nest('main', 'child.view');        
-        return View::make('Admin/Page::index');                
+        $dirs = array_filter(glob(base_path() . '/Nawiat/Modules/Page/storage/*'), 'is_dir');
+        
+        $pages = [];
+
+        foreach($dirs as $dir){
+            $splits = explode('/', $dir);
+
+            $page = end($splits);
+
+            $pages[] = $page;
+        }
+
+        return View::make('Admin/Page::index', ['pages' => $pages]);        
     }
     
-    public function getNew()
+    public function getEdit($pageId)
     {
-        return View::make('Admin/Blog::new');                
+
     }
     
     public function getView()
