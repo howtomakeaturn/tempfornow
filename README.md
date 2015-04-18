@@ -1,13 +1,11 @@
-Nawiat is a A super extendible CMS made for developers based on Laravel.
+Atayal(泰雅) is a A super extendible CMS made for developers based on Laravel.
 
-# Why Nawiat is super extendible?
-* Nawiat is composed by 'Modules'
+# Why Atayal is super extendible?
+* Atayal is composed by 'Modules'
 * Each 'Module' are just two Laravel packages ( Main/Admin ).
 * Each 'Main' Laravel package of 'Module' is shipped with a Facade or Manager to help dealing with everything.
 
-Even admin panel are composed by the same rules.
-
-That's why Nawiat is super extendible.
+That's why Atayal is super extendible.
 
 Design philosophy for 'Module':
 * Utilize on Laravel rather than adding more magics.
@@ -21,14 +19,14 @@ Design philosophy for 'Module':
 Considering:
 * NoSQL is more flexibile.
 
-Slogan: Nawiat. A super extendible CMS made for developers based on Laravel.
+Slogan: Atayal. A super extendible CMS made for developers based on Laravel.
 Release Official site as sample.
 Create a playground site.
 
-nawiat.org
-playground.nawiat.org
+atayal.org
+playground.atayal.org
 
-nawiat-sample
+atayal-sample
 
 Design philosophy for template system:
 * Provide editor for core content of the pages. ( Users always want to feel they can control the system. )
@@ -41,7 +39,7 @@ jNot favor for switchable theme system. (It results in strong conventions on the
 # Advanced
 Don't wanna just a CMS, and don't wanna create 'Modules' at all?
 Just put your stuff in 'app/' folder and develop like a normal Laravel project!
-Nawiat won't get in your way!
+Atayal won't get in your way!
 
 # TODO
 * Facades for Modules
