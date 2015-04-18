@@ -124,8 +124,8 @@ return array(
         
         'Nawiat\Core\ServiceProviders\Main\RouteServiceProvider',
         'Nawiat\Core\ServiceProviders\Main\TemplateServiceProvider',
+        'Nawiat\Core\ServiceProviders\Main\HelperServiceProvider',
 
-        'Nawiat\Core\ServiceProviders\Admin\HelperServiceProvider',
         'Nawiat\Core\ServiceProviders\Admin\RouteServiceProvider',
         'Nawiat\Core\ServiceProviders\Admin\TemplateServiceProvider',
 

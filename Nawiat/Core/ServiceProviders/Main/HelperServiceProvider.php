@@ -1,5 +1,5 @@
 <?php
-namespace Nawiat\Core\ServiceProviders\Admin;
+namespace Nawiat\Core\ServiceProviders\Main;
 
 use Illuminate\Support\ServiceProvider;
 use \Route;
