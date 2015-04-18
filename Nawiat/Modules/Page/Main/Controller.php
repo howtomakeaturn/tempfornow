@@ -3,6 +3,7 @@
 use \Controller as BaseController;
 use \View;
 use \File;
+use Nawiat\Modules\Page\Page;
 
 class Controller extends BaseController
 {
@@ -12,14 +13,10 @@ class Controller extends BaseController
     }
     
     public function getView($pageId)
-    {
-        $page = File::get( base_path('Nawiat/Modules/Page/Main/storage/' . $pageId . '/main.html') );
-        
-        $config = parse_ini_file( base_path('Nawiat/Modules/Page/Main/storage/' . $pageId . '/main.ini') );
+    {        
+        $page = Page::get($pageId);
                 
-        return View::make('Page::' . $config['template'], ['main' => $page]);
-        
-        return $page;
+        return View::make('Page::' . $page->config['template'], ['main' => $page->content]);        
     }
     
 }

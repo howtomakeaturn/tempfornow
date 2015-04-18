@@ -14,9 +14,9 @@ class Page
     {
         $instance = new self();
 
-        $config = parse_ini_file( base_path('Nawiat/Modules/Page/Main/storage/' . $pageId . '/main.ini') );
+        $config = parse_ini_file( base_path('Nawiat/Modules/Page/Main/storage/' . $pageId . '.ini') );
 
-        $content = File::get( base_path('Nawiat/Modules/Page/Main/storage/' . $pageId . '/main.html') );
+        $content = File::get( base_path('Nawiat/Modules/Page/Main/storage/' . $pageId . '.html') );
 
         $instance->id = $pageId;
 
@@ -52,9 +52,9 @@ class Page
     
     public function save()
     {
-        File::put( base_path('Nawiat/Modules/Page/Main/storage/' . $this->id . '/main.html'), $this->content );
+        File::put( base_path('Nawiat/Modules/Page/Main/storage/' . $this->id . '.html'), $this->content );
         
-        write_ini_file( $this->config, base_path('Nawiat/Modules/Page/Main/storage/' . $this->id . '/main.ini') );
+        write_ini_file( $this->config, base_path('Nawiat/Modules/Page/Main/storage/' . $this->id . '.ini') );
     }
     
 }
