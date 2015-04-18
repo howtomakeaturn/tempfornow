@@ -1,5 +1,5 @@
 <?php
-namespace Nawiat\Core\ServiceProviders\Admin;
+namespace Atayal\Core\ServiceProviders\Admin;
 
 use Illuminate\Support\ServiceProvider;
 use \Route;
@@ -15,14 +15,14 @@ class RouteServiceProvider extends ServiceProvider {
 
                 $packageName = $splits[count($splits)-2];
 
-                Route::controller(strtolower($packageName), 'Nawiat\\Modules\\'  . $packageName . '\Admin\Controller');
+                Route::controller(strtolower($packageName), 'Atayal\\Modules\\'  . $packageName . '\Admin\Controller');
             }
         });
     }
         
     protected function paths()
     {
-        $dirs = array_filter(glob(base_path() . '/Nawiat/Modules/*/Admin'), 'is_dir');
+        $dirs = array_filter(glob(base_path() . '/Atayal/Modules/*/Admin'), 'is_dir');
 
         return $dirs;
     }

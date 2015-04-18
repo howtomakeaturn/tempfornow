@@ -122,12 +122,12 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
         
-        'Nawiat\Core\ServiceProviders\Main\RouteServiceProvider',
-        'Nawiat\Core\ServiceProviders\Main\TemplateServiceProvider',
-        'Nawiat\Core\ServiceProviders\Main\HelperServiceProvider',
+        'Atayal\Core\ServiceProviders\Main\RouteServiceProvider',
+        'Atayal\Core\ServiceProviders\Main\TemplateServiceProvider',
+        'Atayal\Core\ServiceProviders\Main\HelperServiceProvider',
 
-        'Nawiat\Core\ServiceProviders\Admin\RouteServiceProvider',
-        'Nawiat\Core\ServiceProviders\Admin\TemplateServiceProvider',
+        'Atayal\Core\ServiceProviders\Admin\RouteServiceProvider',
+        'Atayal\Core\ServiceProviders\Admin\TemplateServiceProvider',
 
 	),
 

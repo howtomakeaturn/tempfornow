@@ -17,7 +17,7 @@
 			"app/tests/TestCase.php"
 		],
         "psr-0": {
-            "Nawiat": ""
+            "Atayal": ""
         }
 	},
 	"scripts": {

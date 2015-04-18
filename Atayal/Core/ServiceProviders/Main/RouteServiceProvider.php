@@ -1,5 +1,5 @@
 <?php
-namespace Nawiat\Core\ServiceProviders\Main;
+namespace Atayal\Core\ServiceProviders\Main;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -14,7 +14,7 @@ class RouteServiceProvider extends ServiceProvider {
         
     protected function paths()
     {
-        $dirs = array_filter(glob(base_path() . '/Nawiat/Modules/*/Main'), 'is_dir');
+        $dirs = array_filter(glob(base_path() . '/Atayal/Modules/*/Main'), 'is_dir');
 
         return $dirs;
     }

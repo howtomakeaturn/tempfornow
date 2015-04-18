@@ -1,5 +1,5 @@
 <?php
-namespace Nawiat\Core\ServiceProviders\Main;
+namespace Atayal\Core\ServiceProviders\Admin;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -10,9 +10,9 @@ class TemplateServiceProvider extends ServiceProvider {
         foreach($this->paths() as $path){
             $splits = explode('/', $path);
 
-            $packageName = end($splits);
+            $packageName = $splits[count($splits)-2];
 
-            $this->package('nawiat/' . $packageName, null, base_path() . '/Nawiat/Modules/' . $packageName . '/Main');        
+            $this->package('nawiat/' . $packageName, 'Admin/' . $packageName, base_path() . '/Atayal/Modules/' . $packageName . '/Admin');        
         }
     }
 
@@ -20,7 +20,7 @@ class TemplateServiceProvider extends ServiceProvider {
     
     protected function paths()
     {
-        $dirs = array_filter(glob(base_path() . '/Nawiat/Modules/*'), 'is_dir');
+        $dirs = array_filter(glob(base_path() . '/Atayal/Modules/*/Admin'), 'is_dir');
         
         return $dirs;
     }

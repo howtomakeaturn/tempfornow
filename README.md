@@ -44,3 +44,6 @@ Atayal won't get in your way!
 # TODO
 * Facades for Modules
 * i18n for admin panels
+
+# script
+find . -type f | xargs sed -i  's/Nawiat/Atayal/g'

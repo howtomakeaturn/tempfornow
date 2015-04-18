@@ -1,9 +1,9 @@
-<?php namespace Nawiat\Modules\Page\Main;
+<?php namespace Atayal\Modules\Page\Main;
 
 use \Controller as BaseController;
 use \View;
 use \File;
-use Nawiat\Modules\Page\Page;
+use Atayal\Modules\Page\Page;
 
 class Controller extends BaseController
 {

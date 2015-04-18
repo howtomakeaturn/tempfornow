@@ -1,11 +1,11 @@
-<?php namespace Nawiat\Modules\Page\Admin;
+<?php namespace Atayal\Modules\Page\Admin;
 
 use \Controller as BaseController;
 use \View;
 use \File;
 use \Input;
 use \Redirect;
-use Nawiat\Modules\Page\Page;
+use Atayal\Modules\Page\Page;
 
 class Controller extends BaseController
 {
@@ -20,7 +20,7 @@ class Controller extends BaseController
     {
         $page = Page::get($pageId);
 
-        $templateFullPaths = array_filter(glob(base_path() . '/Nawiat/Modules/Page/Main/views/*'), 'is_file');
+        $templateFullPaths = array_filter(glob(base_path() . '/Atayal/Modules/Page/Main/views/*'), 'is_file');
         
         $templates = [];
         

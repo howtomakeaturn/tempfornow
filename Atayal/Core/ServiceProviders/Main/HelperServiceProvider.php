@@ -1,5 +1,5 @@
 <?php
-namespace Nawiat\Core\ServiceProviders\Main;
+namespace Atayal\Core\ServiceProviders\Main;
 
 use Illuminate\Support\ServiceProvider;
 use \Route;
@@ -8,7 +8,7 @@ class HelperServiceProvider extends ServiceProvider {
 
     public function register()
     {
-        require base_path('Nawiat/Core/helpers.php');
+        require base_path('Atayal/Core/helpers.php');
     }
 
 }

@@ -1,4 +1,4 @@
-<?php namespace Nawiat\Modules\Page;
+<?php namespace Atayal\Modules\Page;
 
 use \File;
 
@@ -14,9 +14,9 @@ class Page
     {
         $instance = new self();
 
-        $config = parse_ini_file( base_path('Nawiat/Modules/Page/Main/storage/' . $pageId . '.ini') );
+        $config = parse_ini_file( base_path('Atayal/Modules/Page/Main/storage/' . $pageId . '.ini') );
 
-        $content = File::get( base_path('Nawiat/Modules/Page/Main/storage/' . $pageId . '.html') );
+        $content = File::get( base_path('Atayal/Modules/Page/Main/storage/' . $pageId . '.html') );
 
         $instance->id = $pageId;
 
@@ -29,7 +29,7 @@ class Page
     
     public static function all()
     {
-        $paths = array_filter(glob(base_path() . '/Nawiat/Modules/Page/Main/storage/*.html'), 'is_file');
+        $paths = array_filter(glob(base_path() . '/Atayal/Modules/Page/Main/storage/*.html'), 'is_file');
 
         $pages = [];
 
@@ -54,9 +54,9 @@ class Page
     
     public function save()
     {
-        File::put( base_path('Nawiat/Modules/Page/Main/storage/' . $this->id . '.html'), $this->content );
+        File::put( base_path('Atayal/Modules/Page/Main/storage/' . $this->id . '.html'), $this->content );
         
-        write_ini_file( $this->config, base_path('Nawiat/Modules/Page/Main/storage/' . $this->id . '.ini') );
+        write_ini_file( $this->config, base_path('Atayal/Modules/Page/Main/storage/' . $this->id . '.ini') );
     }
     
 }
