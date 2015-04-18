@@ -16,26 +16,33 @@ class Controller extends BaseController
         return View::make('Admin/Page::index', ['pages' => $pages]);        
     }
     
+    public function getNew()
+    {
+        return View::make('Admin/Page::new', ['templates' => Page::templates()]);                
+    }
+    
+    public function postNew()
+    {
+        $page = Page::create(
+            Input::get('id'),
+            ['template' => Input::get('template')],
+            Input::get('content')
+        );
+        
+        $page->save();
+        
+        return Redirect::to('/admin/page');
+    }
+    
     public function getEdit($pageId)
     {
         $page = Page::get($pageId);
 
-        $templateFullPaths = array_filter(glob(base_path() . '/Atayal/Modules/Page/Main/views/*'), 'is_file');
-        
-        $templates = [];
-        
-        foreach($templateFullPaths as $path){
-            $splits = explode('/', $path);
-            
-            $template = end($splits);
-            
-            $templates[] = explode('.', $template)[0];
-        }
         
         return View::make('Admin/Page::edit', 
             [
                 'page' => $page,
-                'templates' => $templates
+                'templates' => Page::templates()
             ]
         );
     }
@@ -53,14 +60,12 @@ class Controller extends BaseController
         return Redirect::back();
     }
     
-    public function getView()
+    public function postDelete()
     {
-        return View::make('Admin/Blog::view');        
+        $page = Page::get( Input::get('pageId') );
+        
+        $page->delete();
+        
+        return Redirect::to('/admin/page/');        
     }
-    
-    public function getPreview()
-    {
-        return View::make('Admin/Blog::preview');
-    }
-    
 }

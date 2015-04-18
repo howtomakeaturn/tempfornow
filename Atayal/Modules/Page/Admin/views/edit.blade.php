@@ -26,4 +26,8 @@
         CKEDITOR.replace( 'editor1' );
     </script>
 </form>
+<form method='post' action='/admin/page/delete'>
+    <input type='hidden' name='pageId' value='{{ $page->id }}' />
+    <input type='submit' value='Delete' />
+</form>
 @stop

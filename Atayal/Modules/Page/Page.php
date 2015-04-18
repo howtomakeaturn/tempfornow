@@ -10,6 +10,36 @@ class Page
     
     public $content;
     
+    public static function templates()
+    {
+        $templateFullPaths = array_filter(glob(base_path() . '/Atayal/Modules/Page/Main/views/*'), 'is_file');
+        
+        $templates = [];
+        
+        foreach($templateFullPaths as $path){
+            $splits = explode('/', $path);
+            
+            $template = end($splits);
+            
+            $templates[] = explode('.', $template)[0];
+        }
+        
+        return $templates;
+    }
+    
+    public static function create($id, $config, $content)
+    {
+        $page = new self();
+        
+        $page->id = $id;
+        
+        $page->config = $config;
+        
+        $page->content = $content;
+                
+        return $page;
+    }
+    
     public static function get($pageId)
     {
         $instance = new self();
@@ -57,6 +87,13 @@ class Page
         File::put( base_path('Atayal/Modules/Page/Main/storage/' . $this->id . '.html'), $this->content );
         
         write_ini_file( $this->config, base_path('Atayal/Modules/Page/Main/storage/' . $this->id . '.ini') );
+    }
+    
+    public function delete()
+    {
+        File::delete( base_path('Atayal/Modules/Page/Main/storage/' . $this->id . '.html') );
+
+        File::delete( base_path('Atayal/Modules/Page/Main/storage/' . $this->id . '.ini') );
     }
     
 }
