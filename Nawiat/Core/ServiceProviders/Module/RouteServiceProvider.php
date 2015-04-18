@@ -1,5 +1,5 @@
 <?php
-namespace Nawiat\Core\ServiceProviders;
+namespace Nawiat\Core\ServiceProviders\Module;
 
 use Illuminate\Support\ServiceProvider;
 
