@@ -46,4 +46,3 @@ Nawiat won't get in your way!
 # TODO
 * Facades for Modules
 * i18n for admin panels
-* Page structure improve

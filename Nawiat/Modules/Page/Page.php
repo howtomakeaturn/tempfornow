@@ -29,18 +29,20 @@ class Page
     
     public static function all()
     {
-        $dirs = array_filter(glob(base_path() . '/Nawiat/Modules/Page/Main/storage/*'), 'is_dir');
+        $paths = array_filter(glob(base_path() . '/Nawiat/Modules/Page/Main/storage/*.html'), 'is_file');
 
         $pages = [];
 
-        foreach($dirs as $dir){
-            $splits = explode('/', $dir);
+        foreach($paths as $path){
+            $splits = explode('/', $path);
 
             $page = end($splits);
+            
+            $page = explode('.', $page)[0];
 
             $pages[] = $page;
         }
-        
+
         $result = [];
         
         foreach($pages as $id){
