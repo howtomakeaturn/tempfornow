@@ -1,4 +1,4 @@
-<?php namespace Nawiat\Admin\Page;
+<?php namespace Nawiat\Modules\Page\Admin;
 
 use \Controller as BaseController;
 use \View;
@@ -11,8 +11,8 @@ class Controller extends BaseController
 {
     public function getIndex()
     {
-        $dirs = array_filter(glob(base_path() . '/Nawiat/Modules/Page/storage/*'), 'is_dir');
-        
+        $dirs = array_filter(glob(base_path() . '/Nawiat/Modules/Page/Main/storage/*'), 'is_dir');
+
         $pages = [];
 
         foreach($dirs as $dir){
@@ -30,7 +30,7 @@ class Controller extends BaseController
     {
         $page = Page::get($pageId);
 
-        $templateFullPaths = array_filter(glob(base_path() . '/Nawiat/Modules/Page/views/*'), 'is_file');
+        $templateFullPaths = array_filter(glob(base_path() . '/Nawiat/Modules/Page/Main/views/*'), 'is_file');
         
         $templates = [];
         

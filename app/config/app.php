@@ -122,8 +122,8 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
         
-        'Nawiat\Core\ServiceProviders\Module\RouteServiceProvider',
-        'Nawiat\Core\ServiceProviders\Module\TemplateServiceProvider',
+        'Nawiat\Core\ServiceProviders\Main\RouteServiceProvider',
+        'Nawiat\Core\ServiceProviders\Main\TemplateServiceProvider',
 
         'Nawiat\Core\ServiceProviders\Admin\HelperServiceProvider',
         'Nawiat\Core\ServiceProviders\Admin\RouteServiceProvider',

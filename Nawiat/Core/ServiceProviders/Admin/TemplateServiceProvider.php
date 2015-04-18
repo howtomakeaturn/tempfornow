@@ -10,9 +10,9 @@ class TemplateServiceProvider extends ServiceProvider {
         foreach($this->paths() as $path){
             $splits = explode('/', $path);
 
-            $packageName = end($splits);
+            $packageName = $splits[count($splits)-2];
 
-            $this->package('nawiat/' . $packageName, 'Admin/' . $packageName, base_path() . '/Nawiat/Admin/' . $packageName);        
+            $this->package('nawiat/' . $packageName, 'Admin/' . $packageName, base_path() . '/Nawiat/Modules/' . $packageName . '/Admin');        
         }
     }
 
@@ -20,7 +20,7 @@ class TemplateServiceProvider extends ServiceProvider {
     
     protected function paths()
     {
-        $dirs = array_filter(glob(base_path() . '/Nawiat/Admin/*'), 'is_dir');
+        $dirs = array_filter(glob(base_path() . '/Nawiat/Modules/*/Admin'), 'is_dir');
         
         return $dirs;
     }

@@ -1,5 +1,5 @@
 <?php
-namespace Nawiat\Core\ServiceProviders\Module;
+namespace Nawiat\Core\ServiceProviders\Main;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -12,7 +12,7 @@ class TemplateServiceProvider extends ServiceProvider {
 
             $packageName = end($splits);
 
-            $this->package('nawiat/' . $packageName, null, base_path() . '/Nawiat/Modules/' . $packageName);        
+            $this->package('nawiat/' . $packageName, null, base_path() . '/Nawiat/Modules/' . $packageName . '/Main');        
         }
     }
 
