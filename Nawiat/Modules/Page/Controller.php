@@ -15,7 +15,9 @@ class Controller extends BaseController
     {
         $page = File::get( base_path('Nawiat/Modules/Page/storage/' . $pageId . '/main.html') );
         
-        return View::make('Page::default', ['main' => $page]);
+        $config = parse_ini_file( base_path('Nawiat/Modules/Page/storage/' . $pageId . '/main.ini') );
+                
+        return View::make('Page::' . $config['view'], ['main' => $page]);
         
         return $page;
     }

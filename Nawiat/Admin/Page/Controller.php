@@ -29,10 +29,23 @@ class Controller extends BaseController
     {
         $page = File::get( base_path('Nawiat/Modules/Page/storage/' . $pageId . '/main.html') );
         
+        $templateFullPaths = array_filter(glob(base_path() . '/Nawiat/Modules/Page/views/*'), 'is_file');
+        
+        $templates = [];
+        
+        foreach($templateFullPaths as $path){
+            $splits = explode('/', $path);
+            
+            $template = end($splits);
+            
+            $templates[] = explode('.', $template)[0];
+        }
+        
         return View::make('Admin/Page::edit', 
             [
                 'page' => $page,
                 'pageId' => $pageId,                
+                'templates' => $templates
             ]
         );
     }
