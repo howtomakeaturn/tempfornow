@@ -1,8 +1,8 @@
 @extends('Admin/Page::layout')
 @section('content')
 <script src="//cdn.ckeditor.com/4.4.7/standard/ckeditor.js"></script>
-<h1>Edit Page</h1>
-
+<h1>{{ $page->id }}</h1>
+<a href='/page/view/{{ $page->id }}'>view</a>
 <form method='post' action='/admin/page/update'>
     <select name='template'>
         @foreach($templates as $template)
