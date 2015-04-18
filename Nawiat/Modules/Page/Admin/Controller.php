@@ -11,17 +11,7 @@ class Controller extends BaseController
 {
     public function getIndex()
     {
-        $dirs = array_filter(glob(base_path() . '/Nawiat/Modules/Page/Main/storage/*'), 'is_dir');
-
-        $pages = [];
-
-        foreach($dirs as $dir){
-            $splits = explode('/', $dir);
-
-            $page = end($splits);
-
-            $pages[] = $page;
-        }
+        $pages = Page::all();
 
         return View::make('Admin/Page::index', ['pages' => $pages]);        
     }
@@ -56,7 +46,7 @@ class Controller extends BaseController
         
         $page->content = Input::get('content');
         
-        $page->config['view'] = Input::get('template');
+        $page->config['template'] = Input::get('template');
         
         $page->save();
 

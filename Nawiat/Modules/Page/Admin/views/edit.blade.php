@@ -6,7 +6,7 @@
 <form method='post' action='/admin/page/update'>
     <select name='template'>
         @foreach($templates as $template)
-            @if( $template == $page->config['view'] )
+            @if( $template == $page->config['template'] )
                 <option selected value='{{ $template }}'>{{ $template }}</option>                
             @else
                 <option value='{{ $template }}'>{{ $template }}</option>        

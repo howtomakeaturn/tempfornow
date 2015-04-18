@@ -27,6 +27,29 @@ class Page
         return $instance;
     }
     
+    public static function all()
+    {
+        $dirs = array_filter(glob(base_path() . '/Nawiat/Modules/Page/Main/storage/*'), 'is_dir');
+
+        $pages = [];
+
+        foreach($dirs as $dir){
+            $splits = explode('/', $dir);
+
+            $page = end($splits);
+
+            $pages[] = $page;
+        }
+        
+        $result = [];
+        
+        foreach($pages as $id){
+            $result[] = self::get($id);
+        }
+
+        return $result;        
+    }
+    
     public function save()
     {
         File::put( base_path('Nawiat/Modules/Page/Main/storage/' . $this->id . '/main.html'), $this->content );

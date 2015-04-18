@@ -17,7 +17,7 @@ class Controller extends BaseController
         
         $config = parse_ini_file( base_path('Nawiat/Modules/Page/Main/storage/' . $pageId . '/main.ini') );
                 
-        return View::make('Page::' . $config['view'], ['main' => $page]);
+        return View::make('Page::' . $config['template'], ['main' => $page]);
         
         return $page;
     }

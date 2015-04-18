@@ -3,7 +3,7 @@ Nawiat is a A super extendible CMS made for developers based on Laravel.
 # Why Nawiat is super extendible?
 * Nawiat is composed by 'Modules'
 * Each 'Module' are just two Laravel packages ( Main/Admin ).
-* Each 'Main' Laravel package of 'Module' is shipped with a Facade dealing with everything.
+* Each 'Main' Laravel package of 'Module' is shipped with a Facade or Manager to help dealing with everything.
 
 Even admin panel are composed by the same rules.
 
@@ -46,3 +46,4 @@ Nawiat won't get in your way!
 # TODO
 * Facades for Modules
 * i18n for admin panels
+* Page structure improve
