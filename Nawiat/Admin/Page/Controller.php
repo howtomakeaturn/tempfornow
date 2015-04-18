@@ -5,6 +5,7 @@ use \View;
 use \File;
 use \Input;
 use \Redirect;
+use Nawiat\Modules\Page\Page;
 
 class Controller extends BaseController
 {
@@ -27,8 +28,8 @@ class Controller extends BaseController
     
     public function getEdit($pageId)
     {
-        $page = File::get( base_path('Nawiat/Modules/Page/storage/' . $pageId . '/main.html') );
-        
+        $page = Page::get($pageId);
+
         $templateFullPaths = array_filter(glob(base_path() . '/Nawiat/Modules/Page/views/*'), 'is_file');
         
         $templates = [];
@@ -44,7 +45,6 @@ class Controller extends BaseController
         return View::make('Admin/Page::edit', 
             [
                 'page' => $page,
-                'pageId' => $pageId,                
                 'templates' => $templates
             ]
         );
@@ -52,7 +52,13 @@ class Controller extends BaseController
     
     public function postUpdate()
     {
-        File::put( base_path('Nawiat/Modules/Page/storage/' . Input::get('pageId') . '/main.html'), Input::get('content') );
+        $page = Page::get( Input::get('pageId') );
+        
+        $page->content = Input::get('content');
+        
+        $page->config['view'] = Input::get('template');
+        
+        $page->save();
 
         return Redirect::back();
     }
