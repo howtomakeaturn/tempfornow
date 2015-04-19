@@ -47,7 +47,9 @@ Atayal won't get in your way!
 
 # TODO
 * Facades for Modules
-* Category for Pages. This is used for menu feature.
+* Page priority for ordering.
+* Title for page naming.
+* page instance doesn't know its url
 
 # script
 find . -type f | xargs sed -i  's/Nawiat/Atayal/g'
