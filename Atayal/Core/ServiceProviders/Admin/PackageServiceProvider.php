@@ -3,7 +3,7 @@ namespace Atayal\Core\ServiceProviders\Admin;
 
 use Illuminate\Support\ServiceProvider;
 
-class TemplateServiceProvider extends ServiceProvider {
+class PackageServiceProvider extends ServiceProvider {
     
     public function boot()
     {
