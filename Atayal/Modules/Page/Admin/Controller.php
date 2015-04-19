@@ -5,7 +5,7 @@ use \View;
 use \File;
 use \Input;
 use \Redirect;
-use Atayal\Modules\Page\Page;
+use Atayal\Modules\Page\Manager as Page;
 
 class Controller extends BaseController
 {

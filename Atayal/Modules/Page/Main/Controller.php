@@ -3,7 +3,7 @@
 use \Controller as BaseController;
 use \View;
 use \File;
-use Atayal\Modules\Page\Page;
+use Atayal\Modules\Page\Manager as Page;
 
 class Controller extends BaseController
 {

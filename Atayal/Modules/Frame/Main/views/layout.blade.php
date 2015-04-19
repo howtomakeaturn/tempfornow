@@ -10,7 +10,7 @@
     </head>
     <body>
         <div class="main nav">
-            <div class="ui main menu">
+            <div class="ui main menu inverted teal">
                 <div class="container">
                     <div class="left menu">
                         <a href="/" class=
