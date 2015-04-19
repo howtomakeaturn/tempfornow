@@ -1,6 +1,6 @@
 @extends('Admin/Page::layout')
 @section('content')
-<script src="//cdn.ckeditor.com/4.4.7/standard/ckeditor.js"></script>
+<script src="//cdn.ckeditor.com/4.4.7/full/ckeditor.js"></script>
 <h1>{{ $page->id }}</h1>
 <a href='/page/view/{{ $page->id }}'>view</a>
 <form method='post' action='/admin/page/update'>

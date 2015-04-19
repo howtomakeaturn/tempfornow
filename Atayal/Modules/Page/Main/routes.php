@@ -13,3 +13,7 @@ Route::get('/about', function(){
 Route::get('/install', function(){
     return App::make('Atayal\Modules\Page\Main\Controller')->getView('install');
 });
+
+Route::get('/documentation', function(){
+    return App::make('Atayal\Modules\Page\Main\Controller')->getView('documentation');
+});

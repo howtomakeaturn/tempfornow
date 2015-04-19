@@ -36,6 +36,8 @@ Design philosophy for theme system:
 * Provide enough flexibility for developers/designers to do what they want
 jNot favor for switchable theme system. (It results in strong conventions on the CMS.)
 
+The offical site of Atayal is shipped with Atayal itself as a starting example for you.
+
 # Advanced
 Don't wanna just a CMS, and don't wanna create 'Modules' at all?
 Just put your stuff in 'app/' folder and develop like a normal Laravel project!
