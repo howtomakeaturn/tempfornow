@@ -8,9 +8,9 @@
           <div class="item">
             <i class="folder outline icon"></i> Modules
             <div class="menu">
-              @foreach( Atayal\Modules\Page\Manager::getAllByCategory('module') as $page )
-              <a class="item">{{ $page->id }}</a>
-              @endforeach
+              <a class="item" href='/module/page'>Page</a>
+              <a class="item" href='/module/blog'>Blog</a>
+              <a class="item" href='/module/frame'>Frame</a>
             </div>
           </div>
           <a class="item" href='/how-it-work'>

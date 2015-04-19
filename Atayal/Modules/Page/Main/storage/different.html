@@ -6,7 +6,7 @@
 
 <h1>Theme system</h1>
 
-<p>Theme system results in huge tradeoffs&nbsp;to a CMS.</p>
+<h3>Theme system results in huge tradeoffs&nbsp;to a CMS.</h3>
 
 <p>It forces all developers of the CMS to obey a lot of conventions and make it really difficult to extend for developers not familiar with the CMS.</p>
 
@@ -20,7 +20,7 @@
 
 <h1>Admin Panel</h1>
 
-<p>A consistent layout for admin panels results in huge tradeoffs&nbsp;to a CMS.</p>
+<h3>A consistent layout for admin panels results in huge tradeoffs&nbsp;to a CMS.</h3>
 
 <p>To extend a CMS you usually need to extend the admin panel system, too.</p>
 
@@ -34,7 +34,7 @@
 
 <h1>Routing Mechanism</h1>
 
-<p>Atayal doesn&#39;t allow the end users to change the url&nbsp;of their pages.</p>
+<h3>Atayal doesn&#39;t allow the end users to change the url&nbsp;of their pages.</h3>
 
 <p>Atayal thinks your clients are not gonna change the url of their pages in the rest of their lifes.</p>
 
@@ -43,3 +43,15 @@
 <p>Just edit the &#39;<strong>routes.php</strong>&#39; file of your Module(Laravel Package) directly.</p>
 
 <p>For example, to change the url of pages,&nbsp;edit the&nbsp;<strong>&#39;Atayal/Modules/Page/Main/routes.php&#39; </strong>directly<strong>&nbsp;</strong>like a normal Laravel application.</p>
+
+<h1>Page functionality</h1>
+
+<h3>A full-featured &#39;page module&#39;&nbsp;results in huge tradeoffs&nbsp;to a CMS.</h3>
+
+<p>In a rich &#39;page module&#39;, you need to give every page a &#39;<strong>tile</strong>&#39; for display, a &#39;<strong>slug</strong>&#39; for&nbsp;url, a &#39;<strong>weight</strong>&#39; for ordering, and a &#39;<strong>category</strong>&#39; for partial filtering.</p>
+
+<p>Why make page module so heavy? It&#39;s <strong>page</strong> module not <strong>blog</strong> module. It&#39;s not that dynamic anyway.</p>
+
+<p>Atayar need&nbsp;you to type some&nbsp;characters in &#39;<strong>views</strong>&#39; (<a href="http://laravel.com/docs/4.2/templates">Laravel Templates</a>) manually.</p>
+
+<p>This makes Atayar much easier to reason about and extend.</p>

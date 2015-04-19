@@ -21,36 +21,6 @@ class Manager
         
         return $templates;
     }
-
-    public static function categories()
-    {
-        $pages = self::all();
-        
-        $categories = [];
-        
-        foreach($pages as $page){
-            if ( !in_array($page->config['category'], $categories) ){
-                $categories[] = $page->config['category'];
-            }
-        }
-        
-        return $categories;
-    }
-    
-    public static function getAllByCategory($category)
-    {
-        $pages = self::all();
-        
-        $result = [];
-        
-        foreach($pages as $page){
-            if ( $page->config['category'] === $category ){
-                $result[] = $page;
-            }
-        }
-        
-        return $result;        
-    }
     
     public static function create($id, $config, $content)
     {
