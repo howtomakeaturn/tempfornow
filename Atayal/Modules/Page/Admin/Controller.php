@@ -12,7 +12,7 @@ class Controller extends BaseController
     public function getIndex()
     {
         $pages = Page::all();
-
+                
         return View::make('Admin/Page::index', ['pages' => $pages]);        
     }
     
