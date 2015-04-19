@@ -2,13 +2,16 @@
 namespace Atayal\Core\ServiceProviders\Main;
 
 use Illuminate\Support\ServiceProvider;
+use \File;
 
 class RouteServiceProvider extends ServiceProvider {
 
     public function register()
     {
         foreach($this->paths() as $path){
-            require $path . '/routes.php';
+            if (File::exists($path . '/routes.php')){
+                require $path . '/routes.php';
+            }
         }
     }
         

@@ -17,3 +17,15 @@ Route::get('/install', function(){
 Route::get('/documentation', function(){
     return App::make('Atayal\Modules\Page\Main\Controller')->getView('documentation');
 });
+
+Route::get('/modules', function(){
+    return App::make('Atayal\Modules\Page\Main\Controller')->getView('modules');
+});
+
+Route::get('/different', function(){
+    return App::make('Atayal\Modules\Page\Main\Controller')->getView('different');
+});
+
+Route::get('/conventions', function(){
+    return App::make('Atayal\Modules\Page\Main\Controller')->getView('conventions');
+});
