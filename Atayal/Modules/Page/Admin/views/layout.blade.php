@@ -6,8 +6,8 @@
     </head>
     <body>
         @section('sidebar')
-            <a href='/admin/page'>Pages</a>
-            <a href='/admin/page/new'>New page</a>
+            <a href='/admin/page'>{{ Lang::get('Admin/Page::all.pages') }}</a>
+            <a href='/admin/page/new'>{{ Lang::get('Admin/Page::all.new-page') }}</a>
         @show
 
         <div class="container">
