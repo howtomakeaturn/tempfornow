@@ -7,12 +7,14 @@ class Controller extends BaseController
 {
     public function getIndex()
     {
-        return 'All posts';
+        return View::make('Frame::layout')->nest('child', 'Blog::index', []);
     }
     
-    public function getView()
-    {
-        return View::make('Blog::view');        
+    public function getView($pageId)
+    {        
+        // $page = Page::get($pageId);
+                
+        return View::make('Frame::layout')->nest('child', 'Blog::default', []);
     }
     
 }
