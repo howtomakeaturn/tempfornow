@@ -14,7 +14,7 @@
                 <div class="container">
                     <div class="left menu">
                         <a href="/" class=
-                        "launch item"><b>Atayal CMS</b></a>
+                        "launch item"><b>Atayal</b></a>
                         <a href='/about' class="item">About</a>
                         <a href='/install' class="item">Install</a>
                         <a href='/documentation' class="item">Documentation</a>
@@ -42,14 +42,15 @@
 
         <div class="ui divided horizontal footer link list">
             <div class="item">
-                Atayal
+                &copy; Atayal 2015
             </div>
 
             <div class="item">
                 v 1.0.0
             </div>
-
-            <a href="https://github.com/Anachron/satisfy" class="item">Homepage</a>
+            <div class="item">
+                Powered by <a href='/'><b>Atayal.</b></a>
+            </div>
         </div>
       </div>
 

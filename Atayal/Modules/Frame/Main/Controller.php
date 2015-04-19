@@ -7,7 +7,7 @@ class Controller extends BaseController
 {
     public function getIndex()
     {
-        return View::make('Frame::index');
+        return View::make('Frame::layout');
     }
         
 }
