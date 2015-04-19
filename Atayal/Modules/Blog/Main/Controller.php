@@ -1,4 +1,4 @@
-<?php namespace Atayal\Modules\Blog;
+<?php namespace Atayal\Modules\Blog\Main;
 
 use \Controller as BaseController;
 use \View;
