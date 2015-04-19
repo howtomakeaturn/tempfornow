@@ -125,6 +125,7 @@ return array(
         'Atayal\Core\ServiceProviders\Main\RouteServiceProvider',
         'Atayal\Core\ServiceProviders\Main\TemplateServiceProvider',
         'Atayal\Core\ServiceProviders\Main\HelperServiceProvider',
+        'Atayal\Core\ServiceProviders\Main\LoadingServiceProvider',
 
         'Atayal\Core\ServiceProviders\Admin\RouteServiceProvider',
         'Atayal\Core\ServiceProviders\Admin\TemplateServiceProvider',

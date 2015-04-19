@@ -20,6 +20,8 @@ Considering:
 * NoSQL is more flexibile.
 
 Slogan: Atayal. A super extendible CMS made for developers based on Laravel.
+I created a CMS because I don't know how to extend all the CMS like Wordpress, Joomla, Drupal, October, and etc.
+
 Release Official site as sample.
 Create a playground site.
 
@@ -45,7 +47,7 @@ Atayal won't get in your way!
 
 # TODO
 * Facades for Modules
-* i18n for admin panels
+* Category for Pages. This is used for menu feature.
 
 # script
 find . -type f | xargs sed -i  's/Nawiat/Atayal/g'
