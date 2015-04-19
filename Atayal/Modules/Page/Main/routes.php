@@ -29,3 +29,15 @@ Route::get('/different', function(){
 Route::get('/conventions', function(){
     return App::make('Atayal\Modules\Page\Main\Controller')->getView('conventions');
 });
+
+Route::get('/module/page', function(){
+    return App::make('Atayal\Modules\Page\Main\Controller')->getView('module-page');
+});
+
+Route::get('/module/blog', function(){
+    return App::make('Atayal\Modules\Page\Main\Controller')->getView('module-blog');
+});
+
+Route::get('/module/frame', function(){
+    return App::make('Atayal\Modules\Page\Main\Controller')->getView('module-frame');
+});
