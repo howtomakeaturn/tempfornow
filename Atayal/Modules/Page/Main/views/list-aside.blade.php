@@ -6,7 +6,7 @@
             <i class="idea icon"></i> Introduction
           </a>
           <div class="item">
-            <i class="folder outline icon"></i> Modules
+            <i class="folder outline icon"></i> <a href='/modules'>Modules</a>
             <div class="menu">
               <a class="item" href='/module/page'>Page</a>
               <a class="item" href='/module/blog'>Blog</a>
