@@ -23,7 +23,7 @@
                     </div>
 
                     <div class="right menu">
-                        <a href="/info" class="item">Info</a>
+                        <a class="item"><i class="github icon"></i></a>
                     </div>
                 </div>
             </div>
