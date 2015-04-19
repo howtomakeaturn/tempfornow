@@ -1,3 +1,3 @@
 <?php
 
-Route::get('/', 'Atayal\Modules\Frame\Main\Controller@getIndex');
+//Route::get('/', 'Atayal\Modules\Frame\Main\Controller@getIndex');

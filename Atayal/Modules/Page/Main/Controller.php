@@ -16,7 +16,9 @@ class Controller extends BaseController
     {        
         $page = Page::get($pageId);
                 
-        return View::make('Page::' . $page->config['template'], ['main' => $page->content]);        
+#        return View::make('Page::' . $page->config['template'], ['main' => $page->content]);        
+
+        return View::make('Frame::layout')->nest('child', 'Page::' . $page->config['template'], ['main' => $page->content]);
     }
     
 }
