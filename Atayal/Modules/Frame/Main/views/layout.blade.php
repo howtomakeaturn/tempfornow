@@ -31,13 +31,14 @@
 
       <div class="main container">
         <?php echo $child; ?>
+        <!--
         <h2 class="ui dividing header">Node</h2>
 
         <h2 class="ui dividing header">Mimosa</h2>
 
         <h2 class="ui dividing header">Bower</h2>
       </div>
-
+        -->
       <div class="main footer">
         <div class="ui divider"></div>
 
