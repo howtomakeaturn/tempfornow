@@ -30,6 +30,10 @@ Route::get('/conventions', function(){
     return App::make('Atayal\Modules\Page\Main\Controller')->getView('conventions');
 });
 
+Route::get('/how-it-work', function(){
+    return App::make('Atayal\Modules\Page\Main\Controller')->getView('how-it-work');
+});
+
 Route::get('/module/page', function(){
     return App::make('Atayal\Modules\Page\Main\Controller')->getView('module-page');
 });
