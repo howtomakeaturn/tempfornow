@@ -15,6 +15,7 @@ Design philosophy for 'Module':
 * Components are all provided by the Modules. CMS itself provides as less stuff as possible.
 * Components provided by the CMS should be optional rather than required for creating new modules.
 * Each module should provide 'one' laravel-style facade wrapping all the details to make it easier for developers to use.
+* Each module should provide 'interfaces' in Contracts folder so other developers can understand and extend it easily.
 
 Considering:
 * NoSQL is more flexibile.
@@ -47,6 +48,7 @@ Atayal won't get in your way!
 
 # TODO
 * Facades for Modules
+* Add artisn command to refresh the CMS
 
 # script
 find . -type f | xargs sed -i  's/Nawiat/Atayal/g'
