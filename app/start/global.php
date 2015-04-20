@@ -17,7 +17,11 @@ ClassLoader::addDirectories(array(
 	app_path().'/controllers',
 	app_path().'/models',
 	app_path().'/database/seeds',
-
+    
+    // Yeah, I'm Atayal's loader.
+    // Thanks laravel for making this possible.
+    base_path().'/Atayal'
+    
 ));
 
 /*
