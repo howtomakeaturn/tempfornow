@@ -1,4 +1,4 @@
-@extends('Admin/Page::layout')
+@extends('Page/Admin::layout')
 @section('content')
 <h1>Pages</h1>
 @foreach($pages as $page)

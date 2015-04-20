@@ -13,12 +13,12 @@ class Controller extends BaseController
     {
         $pages = Page::all();
                 
-        return View::make('Admin/Page::index', ['pages' => $pages]);        
+        return View::make('Page/Admin::index', ['pages' => $pages]);        
     }
     
     public function getNew()
     {
-        return View::make('Admin/Page::new', ['templates' => Page::templates()]);                
+        return View::make('Page/Admin::new', ['templates' => Page::templates()]);                
     }
     
     public function postNew()
@@ -39,7 +39,7 @@ class Controller extends BaseController
         $page = Page::get($pageId);
 
         
-        return View::make('Admin/Page::edit', 
+        return View::make('Page/Admin::edit', 
             [
                 'page' => $page,
                 'templates' => Page::templates()

@@ -1,4 +1,4 @@
-@extends('Admin/Page::layout')
+@extends('Page/Admin::layout')
 @section('content')
 <script src="//cdn.ckeditor.com/4.4.7/standard/ckeditor.js"></script>
 <h1>New Page</h1>
