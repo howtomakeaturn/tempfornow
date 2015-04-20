@@ -122,14 +122,9 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
         
-        'Atayal\Core\ServiceProviders\Main\RouteServiceProvider',
-        'Atayal\Core\ServiceProviders\Main\PackageServiceProvider',
-        'Atayal\Core\ServiceProviders\Main\HelperServiceProvider',
-        'Atayal\Core\ServiceProviders\Main\LoadingServiceProvider',
-
-        'Atayal\Core\ServiceProviders\Admin\RouteServiceProvider',
-        'Atayal\Core\ServiceProviders\Admin\PackageServiceProvider',
-
+        'Atayal\Core\ServiceProviders\HelperServiceProvider',
+        'Atayal\Core\ServiceProviders\RouteServiceProvider',
+        'Atayal\Core\ServiceProviders\PackageServiceProvider',
 	),
 
 	/*

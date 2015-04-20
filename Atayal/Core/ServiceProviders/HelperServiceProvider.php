@@ -1,5 +1,5 @@
 <?php
-namespace Atayal\Core\ServiceProviders\Main;
+namespace Atayal\Core\ServiceProviders;
 
 use Illuminate\Support\ServiceProvider;
 use \Route;

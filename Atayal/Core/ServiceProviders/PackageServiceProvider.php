@@ -1,28 +1,19 @@
 <?php
-namespace Atayal\Core\ServiceProviders\Main;
+namespace Atayal\Core\ServiceProviders;
 
 use Illuminate\Support\ServiceProvider;
-
+use \Config;
 class PackageServiceProvider extends ServiceProvider {
+    
+    public function register(){}
     
     public function boot()
     {
-        foreach($this->paths() as $path){
-            $splits = explode('/', $path);
-
-            $packageName = end($splits);
-
-            $this->package('nawiat/' . $packageName, null, base_path() . '/Atayal/Modules/' . $packageName . '/Main');        
+        $modules = array_merge(Config::get('atayal.modules.main'), Config::get('atayal.modules.admin'));
+        
+        foreach( $modules as $module ){
+            $this->package($module[0], $module[1], $module[2]);                    
         }
     }
-
-    public function register(){}
     
-    protected function paths()
-    {
-        $dirs = array_filter(glob(base_path() . '/Atayal/Modules/*'), 'is_dir');
-        
-        return $dirs;
-    }
-
 }

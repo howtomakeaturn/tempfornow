@@ -1,25 +1,25 @@
 <?php
-namespace Atayal\Core\ServiceProviders\Main;
+namespace Atayal\Core\ServiceProviders;
 
 use Illuminate\Support\ServiceProvider;
 use \File;
+use \Config;
 
 class RouteServiceProvider extends ServiceProvider {
 
-    public function register()
+    public function register(){}
+
+    public function boot()
     {
-        foreach($this->paths() as $path){
+        $modules = array_merge(Config::get('atayal.modules.main'), Config::get('atayal.modules.admin'));
+
+        foreach( $modules as $module ){
+            $path = $module[2];
+
             if (File::exists($path . '/routes.php')){
                 require $path . '/routes.php';
-            }
+            }            
         }
-    }
-        
-    protected function paths()
-    {
-        $dirs = array_filter(glob(base_path() . '/Atayal/Modules/*/Main'), 'is_dir');
-
-        return $dirs;
     }
 
 }
