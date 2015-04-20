@@ -10,6 +10,7 @@ return [
             ['atayal/frame', 'Frame', base_path().'/Atayal/Modules/Frame/Main'],
             ['atayal/page', 'Page', base_path().'/Atayal/Modules/Page/Main'],
             ['atayal/blog', 'Blog', base_path().'/Atayal/Modules/Blog/Main'],        
+            ['atayal/contact', 'Contact', base_path().'/Atayal/Modules/Contact/Main'],        
         ],
         /*
          * Admin panels are laravel packages, too.

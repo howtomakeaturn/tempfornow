@@ -20,6 +20,7 @@
                         <a href='/documentation' class="item">Documentation</a>
                         <a href='/forum' class="item">Forum</a>
                         <a href='/blog' class="item">Blog</a>
+                        <a href='/contact' class="item">Contact</a>
                     </div>
 
                     <div class="right menu">
