@@ -2,6 +2,8 @@
 
 use \Controller as BaseController;
 use \View;
+use \Mail;
+use \Input;
 
 class Controller extends BaseController
 {
@@ -12,6 +14,13 @@ class Controller extends BaseController
     
     public function postThanks()
     {
+        $params = Input::all();
+
+        Mail::send('Contact::email', $params, function($message) use ($params)
+        {
+            $message->to('howtomakeaturn@hotmail.com', 'howtomakeaturn')->subject($params['subject']);
+        });
+        
         return View::make('Frame::layout')->nest('child', 'Contact::thanks', []);        
     }
         

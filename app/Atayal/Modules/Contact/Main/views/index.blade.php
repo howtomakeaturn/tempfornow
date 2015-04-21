@@ -11,20 +11,20 @@
             <div class="fields">
                 <div class="four wide field">
                     <label>Name</label>
-                    <input type="text" />
+                    <input type="text" name="name" />
                 </div>
                 <div class="twelve wide field">
                     <label>Email</label>
-                    <input type="text" />
+                    <input type="email" name="email" />
                 </div>
             </div>
             <div class="field">
                 <label>Subject</label>
-                <input type="text" />
+                <input type="text" name="subject" />
             </div>
             <div class="field">
                 <label>I want to say...</label>
-                <textarea></textarea>
+                <textarea name="content"></textarea>
             </div>
             <button type="submit" class="ui submit button">Submit</button>            
         </form>    

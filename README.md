@@ -72,9 +72,8 @@ The offical site of Atayal is shipped with Atayal itself as a starting example f
 
 # Advanced
 Don't wanna just a CMS, and don't wanna create 'Modules' at all?
-Just put your stuff in 'app/' folder and develop like a normal Laravel project!
-Atayal won't get in your way!
-
+Just put your stuff in 'app/' folder and develop like a normal Laravel project.
+Atayal won't get in your way.
 
 # script
 find . -type f | xargs sed -i  's/Nawiat/Atayal/g'
