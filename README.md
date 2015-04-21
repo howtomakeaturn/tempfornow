@@ -24,8 +24,10 @@ Atayal(泰雅) is a A super extendible CMS made for developers based on Laravel.
 # Why Atayal is super extendible?
 * Atayal is composed by 'Modules'
 * Each 'Module' are just two Laravel packages ( Main/Admin ).
-* Each 'Main' Laravel package of 'Module' is shipped with a Facade or Manager to help dealing with everything.
+// * Each 'Main' Laravel package of 'Module' is shipped with a Facade or Manager to help dealing with everything.
 
+You are basically just developing with Laravel.
+Nothing new to learn.
 That's why Atayal is super extendible.
 
 Design philosophy for 'Module':
