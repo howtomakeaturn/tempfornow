@@ -24,7 +24,7 @@ class Manager
     
     public static function create($id, $config, $content)
     {
-        $page = new self();
+        $page = new Page();
         
         $page->id = $id;
         

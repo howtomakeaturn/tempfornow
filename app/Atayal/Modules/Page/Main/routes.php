@@ -45,3 +45,7 @@ Route::get('/module/blog', function(){
 Route::get('/module/frame', function(){
     return App::make('Atayal\Modules\Page\Main\Controller')->getView('module-frame');
 });
+
+Route::get('/module/contact', function(){
+    return App::make('Atayal\Modules\Page\Main\Controller')->getView('module-contact');
+});

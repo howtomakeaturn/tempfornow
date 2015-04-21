@@ -10,6 +10,7 @@
             <div class="menu">
               <a class="item" href='/module/page'>Page</a>
               <a class="item" href='/module/blog'>Blog</a>
+              <a class="item" href='/module/contact'>Contact</a>
               <a class="item" href='/module/frame'>Frame</a>
             </div>
           </div>
