@@ -7,10 +7,10 @@ return [
          * Atayal's Core will load your packages automatically.
          */    
         'main' => [
-            ['atayal/frame', 'Frame', base_path().'/Atayal/Modules/Frame/Main'],
-            ['atayal/page', 'Page', base_path().'/Atayal/Modules/Page/Main'],
-            ['atayal/blog', 'Blog', base_path().'/Atayal/Modules/Blog/Main'],        
-            ['atayal/contact', 'Contact', base_path().'/Atayal/Modules/Contact/Main'],        
+            ['atayal/frame', 'Frame', app_path().'/Atayal/Modules/Frame/Main'],
+            ['atayal/page', 'Page', app_path().'/Atayal/Modules/Page/Main'],
+            ['atayal/blog', 'Blog', app_path().'/Atayal/Modules/Blog/Main'],        
+            ['atayal/contact', 'Contact', app_path().'/Atayal/Modules/Contact/Main'],        
         ],
         /*
          * Admin panels are laravel packages, too.
@@ -18,9 +18,9 @@ return [
          * add them here.
          */
         'admin' => [
-            ['atayal/frame-admin', 'Frame/Admin', base_path().'/Atayal/Modules/Frame/Admin'],
-            ['atayal/page-admin', 'Page/Admin', base_path().'/Atayal/Modules/Page/Admin'],
-            ['atayal/blog-admin', 'Blog/Admin', base_path().'/Atayal/Modules/Blog/Admin'],        
+            ['atayal/frame-admin', 'Frame/Admin', app_path().'/Atayal/Modules/Frame/Admin'],
+            ['atayal/page-admin', 'Page/Admin', app_path().'/Atayal/Modules/Page/Admin'],
+            ['atayal/blog-admin', 'Blog/Admin', app_path().'/Atayal/Modules/Blog/Admin'],        
         ]
     ]
 ];

@@ -17,7 +17,7 @@
 			"app/tests/TestCase.php"
 		],
         "psr-4": {
-            "Atayal\\": "Atayal"
+            "Atayal\\": "app/Atayal"
         }
 	},
 	"scripts": {

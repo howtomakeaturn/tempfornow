@@ -7,7 +7,7 @@ class Manager
     
     public static function templates()
     {
-        $templateFullPaths = array_filter(glob(base_path() . '/Atayal/Modules/Page/Main/views/*'), 'is_file');
+        $templateFullPaths = array_filter(glob(app_path() . '/Atayal/Modules/Page/Main/views/*'), 'is_file');
         
         $templates = [];
         
@@ -39,9 +39,9 @@ class Manager
     {
         $instance = new Page();
 
-        $config = parse_ini_file( base_path('Atayal/Modules/Page/Main/storage/' . $pageId . '.ini') );
+        $config = parse_ini_file( app_path('Atayal/Modules/Page/Main/storage/' . $pageId . '.ini') );
 
-        $content = File::get( base_path('Atayal/Modules/Page/Main/storage/' . $pageId . '.html') );
+        $content = File::get( app_path('Atayal/Modules/Page/Main/storage/' . $pageId . '.html') );
 
         $instance->id = $pageId;
 
@@ -54,7 +54,7 @@ class Manager
     
     public static function all()
     {
-        $paths = array_filter(glob(base_path() . '/Atayal/Modules/Page/Main/storage/*.html'), 'is_file');
+        $paths = array_filter(glob(app_path() . '/Atayal/Modules/Page/Main/storage/*.html'), 'is_file');
 
         $pages = [];
 

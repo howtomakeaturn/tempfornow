@@ -8,7 +8,7 @@ class HelperServiceProvider extends ServiceProvider {
 
     public function register()
     {
-        require base_path('Atayal/Core/helpers.php');
+        require base_path('app/Atayal/Core/helpers.php');
     }
 
 }

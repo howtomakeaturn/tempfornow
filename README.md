@@ -1,3 +1,26 @@
+# TODO
+* Facades for Modules
+* Add artisn command to refresh the CMS
+* Create a Twitter account for it.
+  - https://twitter.com/octobercms
+  - https://twitter.com/wardrobecms
+* Create a github organization for it.
+* GA plugin
+* FB tag plugin
+* template sys with view composer?
+  - declare variables in controller rather than hard-coded in blade
+* LOGO copy vue.js
+* template copy http://vuejs.org/ 
+  - a special layout for homepage
+* Contracts to make the CMS solid
+* move Atayal to app/
+  - just don't heehee
+* Laravel is a trademark of Taylor Otwell. Copyright © Taylor Otwell.
+
+* (Atayal is ) Brought to you with :love by howtomakeaturn[twitter]
+
+----------------------------------------------------------
+
 Atayal(泰雅) is a A super extendible CMS made for developers based on Laravel.
 
 # Why Atayal is super extendible?
@@ -46,26 +69,6 @@ Don't wanna just a CMS, and don't wanna create 'Modules' at all?
 Just put your stuff in 'app/' folder and develop like a normal Laravel project!
 Atayal won't get in your way!
 
-# TODO
-* Facades for Modules
-* Add artisn command to refresh the CMS
-* Create a Twitter account for it.
-  - https://twitter.com/octobercms
-  - https://twitter.com/wardrobecms
-* Create a github organization for it.
-* GA plugin
-* FB tag plugin
-* template sys with view composer?
-  - declare variables in controller rather than hard-coded in blade
-* LOGO copy vue.js
-* template copy http://vuejs.org/ 
-  - a special layout for homepage
-* Contracts to make the CMS solid
-* move Atayal to app/
-  - just don't heehee
-* Laravel is a trademark of Taylor Otwell. Copyright © Taylor Otwell.
-
-* (Atayal is ) Brought to you with :love by howtomakeaturn[twitter]
 
 # script
 find . -type f | xargs sed -i  's/Nawiat/Atayal/g'
