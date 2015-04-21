@@ -24,6 +24,7 @@
                     </div>
 
                     <div class="right menu">
+                        <a class="item"><i class="twitter icon"></i></a>
                         <a class="item"><i class="github icon"></i></a>
                     </div>
                 </div>

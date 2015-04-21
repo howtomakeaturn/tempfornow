@@ -66,7 +66,7 @@ Design philosophy for modules:
     - database -> file system -> laravel config system
 
 Core Idea:
-  - I am a developer. I'd rather write some codes in the CMS than learn usages of the CMS.
+  - I am a developer. I'd rather write some codes in the CMS than learn the CMS.
 
 The offical site of Atayal is shipped with Atayal itself as a starting example for you.
 
