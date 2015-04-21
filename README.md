@@ -13,8 +13,6 @@
 * template copy http://vuejs.org/ 
   - a special layout for homepage
 * Contracts to make the CMS solid
-* move Atayal to app/
-  - just don't heehee
 * Laravel is a trademark of Taylor Otwell. Copyright © Taylor Otwell.
 
 * (Atayal is ) Brought to you with :love by howtomakeaturn[twitter]
@@ -61,6 +59,14 @@ Design philosophy for template system:
 Design philosophy for theme system:
 * Provide enough flexibility for developers/designers to do what they want
 jNot favor for switchable theme system. (It results in strong conventions on the CMS.)
+
+Design philosophy for modules:
+* content dynamicity
+    - high -> low
+    - database -> file system -> laravel config system
+
+Core Idea:
+  - I am a developer. I'd rather write some codes in the CMS than learn usages of the CMS.
 
 The offical site of Atayal is shipped with Atayal itself as a starting example for you.
 

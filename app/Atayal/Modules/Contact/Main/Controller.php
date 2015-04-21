@@ -9,5 +9,10 @@ class Controller extends BaseController
     {
         return View::make('Frame::layout')->nest('child', 'Contact::index', []);
     }
+    
+    public function postThanks()
+    {
+        return View::make('Frame::layout')->nest('child', 'Contact::thanks', []);        
+    }
         
 }
